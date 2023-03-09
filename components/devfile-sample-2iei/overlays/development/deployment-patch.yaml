@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-2iei
+  namespace: nickboldt-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1b4127e8e3663a8132c2f48087fd7767d0203fe8d3d77aa8a308fad775ba5364
+        name: my-nodejs
+        resources: {}
+status: {}
